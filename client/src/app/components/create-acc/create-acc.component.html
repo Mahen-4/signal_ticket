@@ -1,0 +1,27 @@
+
+<div class="auth-container">
+    <div class="sideBar">
+        <img src="../../../assets/images/sideImage.png" />
+        <div class="auth-imgTitle">Inscription</div>
+    </div>
+    <form (ngSubmit)="createUser()">
+        <div class="auth-title">
+            <h1>Bienvenue</h1>
+            <p>Inscrivez vous rapidement</p>
+        </div>
+        <div>
+            <input type="text" name="username" [(ngModel)]="username" placeholder="username" />
+        </div>
+        <div>
+            <input type="password" name="password" [(ngModel)]="password" placeholder="password"/>
+        </div>
+        <div class="auth-formBottom">
+            <input type="submit" value="Valider" />
+            <div>
+                <p>Vous avez déjà un compte ?</p>
+                <a routerLink="/login"> Se Connecter</a>
+            </div>
+        </div>
+        <h2 class="auth-errMSG" [ngStyle]="{'color': 'red', 'margin-top': '5%'}">{{messageERR}}</h2>
+    </form>    
+</div>

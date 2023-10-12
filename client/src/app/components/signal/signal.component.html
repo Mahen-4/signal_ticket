@@ -1,0 +1,17 @@
+<div class="signalItem">
+    <div class="dateDiv">
+        <h2 class="date">{{signalDate}}</h2>
+    </div>
+    <div class="signal-detail">
+        <div>
+            <h1>{{signalItem.titre}}</h1>
+            <p>{{signalItem.description}}</p>
+        </div>
+        <div>
+            <h6><fa-icon [icon]="locationIcon" size="1x" [ngStyle]="{'color': '#6eeb83', 'padding-right': '10px'}"></fa-icon>{{signalItem.localisation}}</h6>
+        </div>
+    </div>
+    <div>
+        <img [src]="'../../../assets/images/' + signalImage"  height="230" width="350"/>
+    </div>
+</div>

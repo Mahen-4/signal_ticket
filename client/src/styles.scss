@@ -1,0 +1,88 @@
+$firstColor: #6eeb83;
+$backColor:  rgb(38, 38, 38);
+
+*{
+    font-family: monospace;
+    margin: 0;
+}
+body{
+    background-color: rgb(51, 51, 51);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    input {
+        background-color: transparent;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid $firstColor  ;
+        width: 500px;
+        height: 30px;
+        color: white;
+        font-size: 20px;
+        ::placeholder{
+            color: grey;
+        }
+    }
+    input[type='submit']{
+        background-color: $firstColor;
+        color: black;
+        width: 30%;
+        height: 100%;
+        font-size: 20px;
+        border: none;
+        transition: .5s;
+        &:hover{
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+
+// AUTH STYLE GLOBAL
+
+
+.auth-container {
+    margin-top: 5%;
+    background-color: $backColor;
+    display: flex;
+    flex-direction: row;
+    form{
+        justify-content: center;
+        margin-left: 20%;
+        .auth-title{
+            h1{
+                margin: 0;
+                font-size: 30px;
+                color: white;
+            }
+            p{
+                margin: 10px 0 20px 0px;
+                color: grey;
+            }
+        }
+        .auth-formBottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+                p{
+                    color: white;
+                }
+                a{
+                    color: $firstColor;
+                }
+        }
+    }
+    .sideBar{
+        position: relative;
+        .auth-imgTitle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  
+            color: white;
+            font-size: 50px; 
+        }
+    }
+}

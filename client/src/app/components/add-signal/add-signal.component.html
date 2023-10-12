@@ -1,0 +1,26 @@
+
+<div class="addSignal-container">
+    
+    <app-side-bar></app-side-bar>
+    <form (ngSubmit)="addSignal()">
+        <div class="auth-title">
+            <h1>Ajouter un signal</h1>
+        </div>
+        <div>
+            <input type="text" name="titre" [(ngModel)]="titre" placeholder="titre" />
+        </div>
+        <div>
+            <input type="text" name="description" [(ngModel)]="description" placeholder="description"/>
+        </div>
+        <div>
+            <input type="text" name="localisation" [(ngModel)]="localisation" placeholder="localisation"/>
+        </div>
+        <div>
+            <input type="file" />
+        </div>
+        <div class="auth-formBottom">
+            <input type="submit" value="Valider" />
+        </div>
+        <h2 class="auth-errMSG" [ngStyle]="{'color': messageColor, 'margin-top': '5%'}">{{messageERR}}</h2>
+    </form> 
+</div>

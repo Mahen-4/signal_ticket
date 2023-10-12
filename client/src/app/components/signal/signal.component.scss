@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.signalItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+    padding-bottom: 10%;
+    .dateDiv{
+        text-align: left;
+        
+        .date{
+            color: white;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+    }
+    .signal-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    h1{
+        color: #6eeb83;
+        font-weight: lighter;
+        font-size: 50px;
+        font-family: 'DM Serif Display', serif;;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+    }
+    h6{
+        color: #54b564;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    img{
+        border: 2px solid #54b564;
+    }
+    
+}
